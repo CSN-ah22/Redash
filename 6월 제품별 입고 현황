@@ -1,0 +1,8 @@
+select p.product_name,sum(it.quantity) as '입고 수량'
+FROM orders as o
+right join order_details as od ON o.id = od.order_id
+right join products as p ON od.product_id = p.id 
+right join inventory_transactions as it ON p.id=it.product_id
+where (YEAR(o.order_date),MONTH(o.order_date)) = (2006,6)
+group by p.product_name
+order by p.product_name desc;
