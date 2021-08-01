@@ -1,0 +1,21 @@
+시점에 대해 나타내기
+
+-- 3가지 종류 --
+select now(), date(now()), curdate()
+// 2008-11-11 12:45:34 //yyyy-mm-dd //yyyy-mm-dd (현재의 날짜를 반환)
+
+- 예시 1
+select*
+from orders
+where order_date = curdate()
+
+- 예시 2
+select date_add(curdate(), interval 1day) //1일 후
+select date_add(curdate(), interval 7day) //7일 후
+select date_add(curdate(), interval -7day) //7일 전
+
+- 예시 3
+select *
+from orders
+where order_date>date_add(curdate(), interval -7 day) //최근 일주일 내에 있었던 주문데이터 불러오기 가능
+
