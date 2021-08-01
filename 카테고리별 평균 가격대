@@ -1,0 +1,4 @@
+select category as '카테고리', avg(list_price) '평균 가격대'
+from products p
+left join order_details od on od.product_id = p.id
+group by category;
