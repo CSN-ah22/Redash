@@ -1,0 +1,8 @@
+select DATE_FORMAT(order_date,'%Y-%m'),count(order_id),
+(SELECT COUNT(order_id)/6
+FROM order_details
+)AS '평균 주문수'
+from orders as o
+right join order_details as od ON o.id = od.order_id 
+where (YEAR(o.order_date), QUARTER(o.order_date)) = (2006,1) or (YEAR(o.order_date), QUARTER(o.order_date)) = (2006,2)
+GROUP BY DATE_FORMAT(order_date,'%Y-%m');
