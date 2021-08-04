@@ -1,0 +1,9 @@
+SELECT c.id,c.first_name, c.last_name , ANY_VALUE(p.product_name) AS `상품명`, 
+count(od.order_id) AS `구매횟수`
+FROM orders as o
+right join order_details as od ON o.id = od.order_id 
+right join products as p ON od.product_id = p.id
+right join customers as c ON o.customer_id = c.id
+where (YEAR(o.order_date),MONTH(o.order_date)) = (2006,6)
+group by c.id
+order by `구매횟수` desc;
