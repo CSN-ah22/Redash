@@ -7,3 +7,4 @@ right join customers as c ON o.customer_id = c.id
 where (YEAR(o.order_date),MONTH(o.order_date)) = (2006,6)
 group by c.id
 order by `구매횟수` desc;
+
