@@ -1,0 +1,8 @@
+select O.id , (
+select status_name
+from orders_status AS OS
+where O.status_id = OS.id
+) AS '상태'
+from orders AS O
+where (YEAR(O.order_date), month(O.order_date)) = (2006,3)
+;
