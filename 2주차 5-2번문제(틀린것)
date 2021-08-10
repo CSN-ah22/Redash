@@ -1,0 +1,17 @@
+SELECT e.id, e.first_name , e.last_name,(
+SELECT DATE_FORMAT(order_date,'%Y-%m') m 
+GROUP BY m
+) AS '년월', (
+SELECT COUNT(order_id)
+GROUP BY DATE_FORMAT(order_date,'%Y-%m')
+)AS '월별 주문 수'
+FROM orders as o  
+inner join order_details as od ON o.id = od.order_id 
+inner join employees as e ON o.employee_id = e.id
+where o.order_date= (
+SELECT o.order_date
+where (YEAR(o.order_date), QUARTER(o.order_date)) = (2006,1)
+)
+GROUP BY e.id,order_id
+HAVING COUNT(order_id) >= 1
+ORDER BY e.id;
