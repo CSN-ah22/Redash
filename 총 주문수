@@ -1,0 +1,4 @@
+select count(od.order_id)AS '총 주문수'
+from orders as o
+right join order_details as od ON o.id = od.order_id 
+;
