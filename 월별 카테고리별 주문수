@@ -1,0 +1,6 @@
+SELECT DATE_FORMAT(order_date,'%Y-%m'),ANY_VALUE(p.category) AS '카테고리' ,od.order_id, COUNT(od.order_id) AS '주문 수', ANY_VALUE(p.product_name) AS '상품명'
+FROM orders as o
+right join order_details as od ON o.id = od.order_id 
+right join products as p ON od.product_id = p.id
+where (YEAR(o.order_date), QUARTER(o.order_date)) = (2006,1) or (YEAR(o.order_date), QUARTER(o.order_date)) = (2006,2)
+GROUP BY od.order_id,DATE_FORMAT(order_date,'%Y-%m');
