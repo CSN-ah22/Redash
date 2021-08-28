@@ -1,5 +1,15 @@
 # Redash
 
+### -ERD 예를 들어 쉽게 보기
+<details>
+  <summary>펼쳐보기</summary>
+  Customers 와 Orders 는
+
+1 vs N 관계이다.
+
+||- vs >|  이와 같은 표식으로 나타낼 수 있다
+</details> 
+
 ### - 오류문장 해결||정리
 
 <details> 
