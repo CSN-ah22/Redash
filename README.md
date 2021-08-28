@@ -1,10 +1,27 @@
 # Redash
 
-- 풀지 못한 쿼리문1</br></br>
+### - 오류문장 해결||정리
+
+<details> 
+<summary>  오류발생 문장 1 </summary>
+  
+ Operand should contain 1 colums
+- 서브쿼리 사용시 나타난 문장
+- 컬럼 갯수가 동일하지 않아서 나타난다
+</details>
+
+<details>
+  <summary> 해결방법 </summary>
+  
+  - row(1, 1) 와 같은 함수를 통해서 컬럼수를 일치시켜줘서 해결이 가능하다
+</details>
+
+
+<details> <summary> 풀지 못한 쿼리문1</br></br> </summary>
 현재 재고 현황을 알기 위해 입고-판매수량 을 빼고 싶었다</br>
 하지만 조인(left, right, inner)을 이용하면 (입고수량+판매수량)-판매수량 이라는 엉뚱한 결과가 나왔고</br>
 UNION ALL 을 써도 각 두개의 select 문 결과가 나오지 않았다</br> 
-많은 시간을 들였지만 아쉬운 결과를 가져가게 되어 힘들었다</br>
+많은 시간을 들였지만 아쉬운 결과를 가져가게 되어 힘들었다</br> </details>
 
 ### - 주요 키워드 조사
 
