@@ -16,6 +16,22 @@
   - row(1, 1) 와 같은 함수를 통해서 컬럼수를 일치시켜줘서 해결이 가능하다
 </details>
 
+<details>
+  <summary>오류 원인 2</summary>
+  
+  - 오류 1055번
+  - group by 절에 포함되지 않은 컬럼을 Select절에서 뽑아올 경우
+  - 즉 집계되지 않은 칼럼을 select 절에서 뽑아오는 경우
+  - 집계 되지 않은 칼럼을 `**nonaggregated column**` 이라 부른다
+</details>
+
+<details>
+  <summary>해결방법</summary>
+  
+  - group by 절에 `**nonaggregated column**` 추가
+  - 서버에서 임의로 집계하는 함수 ANY_VALUE() 사용 - 주의필요!
+  - 참고 사이트 - [https://developyo.tistory.com/20](https://developyo.tistory.com/20)
+</details>
 
 <details> <summary> 풀지 못한 쿼리문1</br></br> </summary>
 현재 재고 현황을 알기 위해 입고-판매수량 을 빼고 싶었다</br>
