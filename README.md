@@ -10,6 +10,9 @@
 ||- vs >|  이와 같은 표식으로 나타낼 수 있다
 </details> 
 
+### -ERD 시각화 정리
+<img src="https://user-images.githubusercontent.com/70833455/131254066-6e8124d6-6847-4256-8f2b-0c1a6453377e.jpg"  width=500px height=480px>
+
 ### - 오류문장 해결||정리
 
 <details> 
