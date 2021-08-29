@@ -21,7 +21,8 @@ IDENTITY 식별자
 
 ### -Cardinality
 
-1 또는 n으로 나타내는 기수
+1 또는 n으로 나타내는 기수<br><br>
+<img src="https://user-images.githubusercontent.com/70833455/131254274-ac030de6-9550-4e61-bc80-ada4dd529532.PNG" width=300px height=360px>
 
 ### -Optionality
 
@@ -29,7 +30,9 @@ IDENTITY 식별자
 
 ### -Mandatory
 
-꼭 필요한 관계, 반드시 가져야하는 속성
+꼭 필요한 관계, 반드시 가져야하는 속성<br><br>
+### -Optionality 와 Madatory 비교 
+<img src="https://user-images.githubusercontent.com/70833455/131254340-f94e1105-cdf3-49e5-81b6-7fb1236d0614.PNG" width=400px height=220px>
 
 ### - 오류문장 해결||정리
 
