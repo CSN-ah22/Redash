@@ -34,6 +34,12 @@ IDENTITY 식별자
 ### -Optionality 와 Madatory 비교 
 <img src="https://user-images.githubusercontent.com/70833455/131254340-f94e1105-cdf3-49e5-81b6-7fb1236d0614.PNG" width=400px height=220px>
 
+### -Cardinality + Optionality
+<img src="https://user-images.githubusercontent.com/70833455/131254482-6ea59062-c67f-4867-a843-7e4b347efae7.PNG" width=250px height=250px>
+
+### -관계 기호 요약
+<img src="https://user-images.githubusercontent.com/70833455/131254594-36f349e8-4224-463a-a952-8d8d0bafe04d.PNG" width=400px height=200px>
+
 ### - 오류문장 해결||정리
 
 <details> 
