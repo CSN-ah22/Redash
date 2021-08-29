@@ -13,6 +13,24 @@
 ### -ERD 시각화 정리
 <img src="https://user-images.githubusercontent.com/70833455/131254066-6e8124d6-6847-4256-8f2b-0c1a6453377e.jpg"  width=500px height=480px>
 
+### -PRIMARY KEY
+
+IDENTITY 식별자
+
+중복되지 않는 값을 가지는 데이터
+
+### -Cardinality
+
+1 또는 n으로 나타내는 기수
+
+### -Optionality
+
+옵션 , 꼭 필요한 관계가 아닐때, Relation이 필요하지 않은것
+
+### -Mandatory
+
+꼭 필요한 관계, 반드시 가져야하는 속성
+
 ### - 오류문장 해결||정리
 
 <details> 
