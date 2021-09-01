@@ -3,13 +3,19 @@
 ### -ERD 예를 들어 쉽게 보기
 <details>
   <summary>펼쳐보기</summary>
-  Customers 와 Orders 는
-
-1 vs N 관계이다.
-
-||- vs >|  이와 같은 표식으로 나타낼 수 있다
+  Customers 와 Orders 는 1 vs N 관계이다.<br>
+  그러므로 아래와 같다
+ <br><br>
+  <b> ||- vs >||  이와 같은 표식으로 나타낼 수 있다 </b>
+ <br><br> 
+  <b> 이유 </b>
+  
+- Customer 입장에서 Orders는 반드시 있어야 하고 여러개 주문 가능하다
+- Orders 입장에서 Customer는 반드시 있어야 하고 하나만 존재한다
+ 
 </details> 
 
+---
 ### -ERD 시각화 정리
 <img src="https://user-images.githubusercontent.com/70833455/131254066-6e8124d6-6847-4256-8f2b-0c1a6453377e.jpg"  width=500px height=480px>
 
@@ -40,6 +46,7 @@ IDENTITY 식별자
 ### -관계 기호 요약
 <img src="https://user-images.githubusercontent.com/70833455/131254594-36f349e8-4224-463a-a952-8d8d0bafe04d.PNG" width=400px height=200px>
 
+---
 ### - 오류문장 해결||정리
 
 <details> 
@@ -86,6 +93,7 @@ SUM(count(~)) 이 문법은 안된다 <br>
 개수를 먼저 집계하고 덧셈할것
 </details>
 
+---
 ### - 주요 키워드 조사
 
 💐**인사이트(insight)**
